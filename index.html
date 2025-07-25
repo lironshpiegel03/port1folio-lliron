@@ -1,201 +1,186 @@
-<!DOCTYPE html>
-
+2<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Liron Shpiegel – Python Developer &amp; Data Analyst</title>
-<link href="style.css" rel="stylesheet"/>
-<style>
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 1rem;
-  }
-
-  .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-  }
-
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      display: none;
-      background-color: #f8e1e7;
-      position: absolute;
-      top: 60px;
-      right: 10px;
-      width: 200px;
-      padding: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-    }
-
-    nav ul.show {
-      display: flex;
-    }
-
-    .hamburger {
-      display: flex;
-    }
-  }
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector("nav ul");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
-  });
-</script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Liron Shpiegel – Python Developer & Data Analyst</title>
+  <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-<nav>
-<div class="hamburger">
-<div class="bar"></div>
-<div class="bar"></div>
-<div class="bar"></div>
-</div>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-<li>
-<button class="theme-toggle" id="theme-toggle">🌙 Dark Mode</button>
-</li>
-</ul>
-</nav>
-</header>
-<main class="profile">
-<img alt="Liron Shpiegel" class="profile-pic" src="liron.jpg"/>
-<div class="profile-text">
-<h1>Liron Shpiegel</h1>
-<h2>Python Developer &amp; Data Analyst</h2>
-<p>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" id="theme-toggle">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile">
+    <img alt="Liron Shpiegel" class="profile-pic" src="liron.jpg"/>
+    <div class="profile-text">
+      <h1>Liron Shpiegel</h1>
+      <h2>Python Developer & Data Analyst</h2>
+      <p>
         Hi! I'm Liron – a Python developer and data analyst based in Israel. I specialize in building desktop apps, automation tools, and label printing systems. With hands-on experience in data pipelines and embedded systems, I love solving complex problems with clean and elegant code. I'm currently pursuing a B.Sc. in Computer and Data Science, with a focus on Data Science and Cloud Technologies. I believe in continuous learning, creativity, and bringing real value through technology.
       </p>
-<!-- GitHub & LinkedIn buttons under description -->
-<div class="profile-buttons">
-<a class="github-link" href="https://github.com/lironshpiegel03" target="_blank">GitHub</a>
-<a class="linkedin-link" href="https://www.linkedin.com/in/liron-shpiegel-8849402aa" target="_blank">LinkedIn</a>
-</div>
-</div>
-</main>
-<section class="projects-section" id="projects">
-<h2>Featured Projects</h2>
-<div class="project-card">
-<h3>SIM Manager</h3>
-<p>A Python desktop app for managing SIM card data, allowing users to edit CSV files, print labels, and automate inventory processes. Built with Tkinter and pandas.</p>
-</div>
-<div class="project-card">
-<h3>Smart Code Reservation Tool</h3>
-<p>An Excel-integrated code reservation system with access control, real-time validation, and audit logging. Developed for efficient code management in production labs.</p>
-<div class="profile-buttons" style="margin-top: 1rem;">
-  <a class="github-link" href="https://youtu.be/c8I9ZLGYuqY" target="_blank">📽️ How the App Works</a>
-</div>
-</div>
-<div class="project-card">
-<h3>Wix Business Website</h3>
-<p>A clean, responsive website for a local business built using Wix. Includes contact forms, service details, and user-friendly navigation.</p>
-<div class="profile-buttons" style="margin-top: 1rem;">
-<a class="github-link" href="https://liron200307.wixsite.com/my-site-1" target="_blank">Visit Website</a>
-</div>
-</div>
-<div class="project-card">
-<h3>Diamond Price Analysis</h3>
-<p>
-        This project presents an in-depth data analysis of a diamond dataset. It includes univariate and multivariate analysis to understand how different attributes (like cut, color, clarity, and carat) affect the price of diamonds.
-        The notebook also provides visual insights into which characteristics are most influential in pricing and how different combinations of features interact.
-      </p>
-</div>
-<div class="project-card">
-<h3>Flight Price Prediction Project</h3>
-<p>
-        This project focuses on analyzing flight data and building a machine learning model to predict airline ticket prices based on features such as airline, source, destination, departure time, and duration.
-        It includes exploratory data analysis (EDA), data preprocessing, feature engineering, visualization, and regression modeling using Python tools.
-      </p>
-</div>
+      <div class="profile-buttons">
+        <a class="github-link" href="https://github.com/lironshpiegel03" target="_blank">GitHub</a>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/liron-shpiegel-8849402aa" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </main>
+    <section class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>java</li>
+      <li>c</li>
+      <li>Pandas & NumPy</li>
+      <li>SQL</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React (learning)</li>
+      <li>Django</li>
+      <li>Git & GitHub</li>
+      <li>Excel & Data Visualization</li>
+      <li>power bi</li>
+      <li>Arduino</li>
+    </ul>
+  </section>
 
-<div class="project-card">
-<h3>Netflix Titles Analysis Using SQL</h3>
-<p>
-    This project analyzes Netflix content for Israel, United States, and India using SQL.
-    The goal is to normalize the dataset, filter for relevant genres, and create a structured database consisting of eight relational tables.
-    The project focuses on two genres: Drama and Horror, and separates information for movies, TV shows, and general listings.
-  </p>
-</div>
-</section>
-<section class="gallery-section" id="gallery">
-<h2>Project Gallery</h2>
-<div class="gallery-grid">
-<div class="gallery-item">
-<h3>Kodaniot Tracker</h3>
-<img src="code_tool_screenshot.png" alt="Kodaniot Tool Screenshot"/>
-<p>System Interface Overview</p>
-</div>
-<div class="gallery-item">
-<h3>Diamond Price Analysis</h3>
-<img alt="Diamond Bar Chart" src="out put1.png"/>
-<p>Price Summary: Min, Avg, Max</p>
-</div>
-<div class="gallery-item">
-<img alt="Top 5 Diamonds" src="out put 2.png"/>
-<p>Top 5 Most Expensive Diamonds</p>
-</div>
-<div class="gallery-item">
-<h3>Flight Price Prediction</h3>
-<img alt="Terminal Distribution" src="output f1.png"/>
-<p>Number of Flights per Terminal</p>
-</div>
-<div class="gallery-item">
-<img alt="Check-in Area" src="output f2.png"/>
-<p>Flights by Check-in Area</p>
-</div>
-<div class="gallery-item">
-<img alt="Destinations" src="output f3.png"/>
-<p>Top &amp; Bottom Destinations</p>
-</div>
-</div>
-</section>
-<section class="contact-section" id="contact">
-<h2>Contact Me</h2>
-<div class="contact-container">
-<form class="contact-form">
-<label for="email">Email:</label>
-<input id="email" name="email" required="" type="email"/>
-<label for="phone">Phone:</label>
-<input id="phone" name="phone" required="" type="tel"/>
-<button type="submit">Send</button>
-</form>
-<div class="my-contact-info">
-<h3>My Contact Info</h3>
-<p>Email: <a href="mailto:liron200307@gmail.com">liron200307@gmail.com</a></p>
-<p>Phone: <a href="tel:0558873222">055-887-3222</a></p>
-</div>
-</div>
-</section>
-<footer>
-<p>© 2025 Liron Shpiegel. All rights reserved.</p>
-</footer>
-<!-- Dark mode toggle -->
-<script>
-    const toggleButton = document.getElementById('theme-toggle');
+  <section class="projects-section" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
+      <h3>SIM Manager</h3>
+      <p>A Python desktop app for managing SIM card data, allowing users to edit CSV files, print labels, and automate inventory processes. Built with Tkinter and pandas.</p>
+    </div>
+    <div class="project-card">
+      <h3>Smart Code Reservation Tool</h3>
+      <p>An Excel-integrated code reservation system with access control, real-time validation, and audit logging. Developed for efficient code management in production labs.</p>
+      <div class="profile-buttons" style="margin-top: 1rem;">
+        <a class="github-link" href="https://youtu.be/c8I9ZLGYuqY" target="_blank">📽️ How the App Works</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Wix Business Website</h3>
+      <p>A clean, responsive website for a local business built using Wix. Includes contact forms, service details, and user-friendly navigation.</p>
+      <div class="profile-buttons" style="margin-top: 1rem;">
+        <a class="github-link" href="https://liron200307.wixsite.com/my-site-1" target="_blank">Visit Website</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <h3>Diamond Price Analysis</h3>
+      <p>In-depth data analysis of a diamond dataset, including univariate and multivariate analysis, feature influence, and data visualization.</p>
+    </div>
+    <div class="project-card">
+      <h3>Flight Price Prediction Project</h3>
+      <p>Analysis of flight data and ML modeling to predict ticket prices based on features like airline, source, destination, and duration.</p>
+    </div>
+    <div class="project-card">
+      <h3>Netflix Titles Analysis Using SQL</h3>
+      <p>SQL project analyzing Netflix content by country and genre. Includes database normalization, filtering, and relational modeling.</p>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <h2>Project Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <h3>Kodaniot Tracker</h3>
+        <img src="code_tool_screenshot.png" alt="Kodaniot Tool Screenshot"/>
+        <p>System Interface Overview</p>
+      </div>
+      <div class="gallery-item">
+        <h3>Diamond Price Analysis</h3>
+        <img src="out put1.png" alt="Diamond Bar Chart"/>
+        <p>Price Summary: Min, Avg, Max</p>
+      </div>
+      <div class="gallery-item">
+        <img src="out put 2.png" alt="Top 5 Diamonds"/>
+        <p>Top 5 Most Expensive Diamonds</p>
+      </div>
+      <div class="gallery-item">
+        <h3>Flight Price Prediction</h3>
+        <img src="output f1.png" alt="Terminal Distribution"/>
+        <p>Number of Flights per Terminal</p>
+      </div>
+      <div class="gallery-item">
+        <img src="output f2.png" alt="Check-in Area"/>
+        <p>Flights by Check-in Area</p>
+      </div>
+      <div class="gallery-item">
+        <img src="output f3.png" alt="Destinations"/>
+        <p>Top & Bottom Destinations</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="certificates-section" id="certificates">
+    <h2>My Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate-item">
+        <img src="data analyst diploma.jpg" alt="Data Analyst Diploma" />
+        <p>Data Analyst Expert Certificate – John Bryce</p>
+      </div>
+      <div class="certificate-item">
+        <img src="diploma  2.jpg" alt="Electronics Engineering Diploma" />
+        <p>Electronics & Computer Engineering Diploma – ORT Singalovski</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Phone:</label>
+        <input id="phone" name="phone" type="tel" required />
+
+        <button type="submit">Send</button>
+      </form>
+      <div class="my-contact-info">
+        <h3>My Contact Info</h3>
+        <p>Email: <a href="mailto:liron200307@gmail.com">liron200307@gmail.com</a></p>
+        <p>Phone: <a href="tel:0558873222">055-887-3222</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Liron Shpiegel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector("nav ul");
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    });
+
+    const toggleButton = document.getElementById("theme-toggle");
     const body = document.body;
-
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      toggleButton.textContent = body.classList.contains('dark-mode')
-        ? '💡 Light Mode'
-        : '🌙 Dark Mode';
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      toggleButton.textContent = body.classList.contains("dark-mode")
+        ? "💡 Light Mode"
+        : "🌙 Dark Mode";
     });
   </script>
 </body>
 </html>
+95
